@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+      <header "header-conteiner">
+           <nav>
+          <img src="http://placehold.it/150x100" class="header-logo" alt="логотип города Седона" height="50" width="50">
+              <ul class="header-main">
+                  <li><a href="info.html">Информация</a> </li>
+                  <li><a href="galary.html">Фото и видео</a></li>
+                  <li><a href="maps.html">Карта штата</a></li>
+                  <li><a href="hotel.html">Гостиницы</a></li>
+              </ul>
+        </nav>
+      </header>
+      <main>
+          <h1 class="visuale-hidden">Поиск жилья</h1>
+          <form>
+          <img src="http://placehold.it/150x100" alt="Смазанная картинка красивого города Седона"
+          <div class="about-hotel">
+              <h2 class="things-title">Инфраструктура</h2>
+              <ul class="things-list">
+                  <li>
+                      <ladel > Басейн
+                      <input type="checkbox" checked>
+                      </ladel>
+                 </li>
+                <li>
+                    <label> Парковка
+                        <input type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label> Wi-fi
+                        <input type="checkbox">
+                    </label>
+                </li>
+              </ul>
+          <h2 class="type-hotel-title">Тип жилья</h2>
+           <ul class="type-hotel-list">
+              <li>
+              <label>Гостиница
+                  <input type="checkbox" checked>
+            </label>
+              </li>
+              <li>
+                  <label>Мотель
+                      <input type="checkbox" checked>
+                  </label>
+              </li>
+              <li>
+                  <label>Апартамента
+                      <input type="checkbox" checked>
+                  </label>
+              </li>
+          </ul>
+              </div>
+         <div class="money">
+              <h2 class="money-title">Стоимость в сутки</h2>
+              <output name="money-min" for="money-range">от 0</output>
+              <output name="money-max" for="money-range">до 3000</output>
+              <input type="range" id="money-range" min="0" max="3000" step="1000">
+          </div>
+          <input type="button" value="Показать">
+          </form>
+      <h1 class="visuale-hidden">Найдено</h1>
+      <section class="choise">
+          <h2 class="choice-title">Найдено:3
+          </h2>
+          <p class="choice-text">сортировка:</p>
+          <ul>
+              <li>
+                <a href="#">по цене</a>
+                <a href="#">по типу</a>
+                <a href="#">по рейтингу</a>
+              </li>
+          </ul>
+      </section>
+      <section class="hotel">
+          <h1 class="visuale-hidden">Отлели</h1>
+          <div class="amara-resot">
+              <figure class="hotel-figure">
+                  <img src="http://placehold.it/150x100" alt="Фото отеля Amara Resot">
+            </figure>
+              <h2 class="hotel-title">Amara-resot</h2>
+              <p class="hotel-text">Гостиница</p>
+              <p class="hotel-money">от 3500 р.</p>
+              <a href="#" class="hotel-yet">Подробнее</a>
+              <input type="button" class="hotel-button" value="Забронировать">
+              <!--<svg ></svg> Думаю что это звезды-->
+              <p class="rating">Рейтинг:8,5</p>
+          </div>
+          <div class="deserrt-quail-inn">
+              <figure class="hotel-figure">
+                  <img src="http://placehold.it/150x100" alt="фото отеля Dasert quail inn">
+              </figure>
+              <h2 class="hotel-title">Desert quail inn</h2>
+              <p claass="hotel-text">Мотель</p>
+              <p class="hotel-money">от 2000 р.</p>
+              <a href="#" class="hotel-yet">Подробнее</a> 
+              <input type="button" class="hotel-button" value="Забронировать">
+              <!--<svg ></svg> Думаю что это звезды-->
+              <p class="rating">Рейтинг:8,9</p>
+          </div>
+          <div class="villas-at-poco-diablo">
+              <figure class="hotel-figure">
+                  <img src="http://placehold.it/150x100" alt=" фото отеля Villas at Poco Diablo">
+              </figure>
+              <h2 class="hotel-title">Villas at Poco Diablo
+              </h2>
+              <p class="hotel-text">Апартаменты</p>
+              <p class="hotel-money">от 4000 р.</p>
+              <a href="#" class="hotel-yet">Подробнее</a>
+              <input type="button" class="hotel-button" value="Забронировать">
+              <!--<svg ></svg> Думаю что это звезды-->
+              <p class="rating">Рейтинг:9,2</p>
+          </div>
+      </section>
+      
+      </main>
+      <footer>
+          <p class="footer-tag">#visitsedona</p>
+              <ul class="social">
+                  <li class="social-button"><a href="#">twitter</a></li>
+                  <li class="social-button"><a href="#">facebook</a></li>
+                  <li class="social-button"><a href="#">youtube</a></li>
+              </ul>
+              <p class="footer-copyright">
+            <a class="button" href="https://htmlacademy.ru">
+                <img src="http://placehold.it/150x100" alt="Логотип HTMLacademy">
+            </a>
+              </p>
+      </footer>
+  </body>
+</html>
