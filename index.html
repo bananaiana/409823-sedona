@@ -3,27 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <!--  <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
 <!-- часть сайта, которая не меняется-->
       <header class="header-conteiner">
           <nav>
-          <img src="http://placehold.it/150x100" class="header-logo" alt="логотип города Седона" height="50" width="50">
+          <img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" class="header-logo" alt="логотип города Седона" height="50" width="50">
               <ul class="header-main">
-                  <li><a href="info.html">Информация</a> </li>
-                  <li><a href="galary.html">Фото и видео</a></li>
-                  <li><a href="maps.html">Карта штата</a></li>
-                  <li><a href="hotel.html">Гостиницы</a></li>
+                  <li><a href="info.html" tabindex>Информация</a> </li>
+                  <li><a href="galary.html" tabindex>Фото и видео</a></li>
+                  <li><a href="maps.html" tabindex>Карта штата</a></li>
+                  <li><a href="hotel.html" tabindex>Гостиницы</a></li>
               </ul>
         </nav>
            <div class="img-top">
-              <img src="http://placehold.it/150x100" alt="Красивая картинка города Седона">
-              <p class="img-text-welcom">welcom</p>
-              <p class="img-text-to">- to gorgeous -</p>
-              <h1 class="img-title">Sedona</h1>
-              <p class="img-text-becouse">"Becouse the Grand Canyon sucks"</p>
-          </div>
+              <img src="img/Shape%201%20copy%203.jpg" alt="Красивая картинка города Седона">
+         </div>
     </header>
       <main class="main-conteiner">
          <section class="conteiner"></section>
@@ -34,25 +31,28 @@
               <p class="about-city-number">- №1 -</p>
               <p class="about-city-text">Седона- не атракцион для туристов, там течет своя жизнь</p>
               <figure class="aboun-city-img">
-                  <img src="http://placehold.it/150x100" alt="красивое смазанное фото города">
+                  <img src="img/Layer%2010.jpg" alt="красивое смазанное фото города">
               </figure>
           </div>
           <div class="list-bye">
                   <div class="item-bye-house">
+                      <img src="img/icon-1.svg" alt="Домик">
                       <h3>Жилье</h3>
                       <p> рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
                   <div class="item-bye-food">
+                      <img src="img/icon-2.svg" alt="Бургер">
                       <h3>Еда</h3>
                       <p>Всегда заказывайте фирменный бургер. Вы не разочеруетесь!</p>
                   </div>
                   <div class="item-bye-gift">
+                      <img src="img/icon-3.svg" alt="Подарок">
                       <h3>Сувениры</h3>
                       <p>Не только китайского, но и местного производства!</p>
                   </div>
               </div>
           <div class="about-city">
-              <img src="http://placehold.it/150x100" alt="красивое фото моста">
+              <img src="img/Layer%205.jpg" alt="красивое фото моста">
               <h3 class="about-city-title">Там есть мост дьявола</h3>
               <p class="about-city-number">- №2 -</p>
               <p class="about-city-text">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
@@ -76,32 +76,54 @@
             </div>
           <section class="visited">
               <h2 class="visually-hidden"> Обращение</h2>
+              <figure>
+                  <figcaption>
               <p class="visited-title"> Заинтересовались? </p>
-              <p class="visited-text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+              <p class="visited-text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>>
+                  </figcaption>
+                  <img src="img/map.png" alt="Геоданные города Седона">
+              </figure>
           </section>
-          <!-- окно с датами
+          <!-- окно с датами-->
           <form action="#" method="get" class="form" type="hidden">
               <h3 class="form-title">Поиск гостиницы в Седоне</h3>
-              <label>Дата заезда<input type="date" name="date-there">
+              <label>Дата заезда
+                <input type="date" name="date-there">
               </label>
-              <label>Дата выезда<input type="date" name="date-back">
+              <label>Дата выезда
+                  <input type="date" name="date-back">
               </label>
-            </form>-->
-          <!-- карта-->
+              <label id="number">Взрослые
+                  <input type="button" id="number" value="-">
+                  <input type="number" id="number" min="1" max="10" step="1" value="2">
+                  <input type="button" id="number" value="+">
+              </label>
+            </form>
            </main>
           <footer class="footer">
               <p class="footer-tag">#visitsedona</p>
               <ul class="social">
-                  <li class="social-button"><a href="#">twitter</a></li>
-                  <li class="social-button"><a href="#">facebook</a></li>
-                  <li class="social-button"><a href="#">youtube</a></li>
+                  <li class="social-button">
+                      <a href="#" tabindex>twitter
+                      <img src="img/t.svg" alt="twitter">
+                      </a>
+                  </li>
+                  <li class="social-button">
+                      <a href="#" tabindex>facebook
+                      <img src="img/fb-icon.svg" alt="facebook">
+                      </a>
+                  </li>
+                  <li class="social-button">
+                      <a href="#" tabindex>youtube
+                      <img src="img/youtube.svg" alt="youtube">
+                      </a>
+                  </li>
               </ul>
               <p class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru">
-                <img src="http://placehold.it/150x100" alt="Логотип HTMLacademy">
+            <a class="button" href="https://htmlacademy.ru" tabindex>
+                <img src="img/logo_name.svg" alt="Логотип HTMLacademy">
             </a>
               </p>
         </footer>
-     
   </body>
 </html>
