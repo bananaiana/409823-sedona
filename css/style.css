@@ -1,5 +1,129 @@
 body {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
-    font-family: TPsans;
+    font-family: "PT Sans", sans-serif;
     text-align: center;
+    color: rgb(0 0 0);
+    line-height: 1.5;
+    text-transform: uppercase ;
+    background-color: rgb(255 255 255);
+    background-position: center;
 }
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    line-height: normal;
+    color: black;
+    background-color:rgb(255, 255, 255);
+    background-image: url(img/Shape%201%20copy%203.jpg);
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+.header-main a:hover,
+.header-main a:focus {
+    background-color: rgb(226, 239, 248);
+}
+
+h2,
+h3 {
+    font-size: 21px;
+}
+.about-city {
+    color: rgb(255,255,255);
+    background-color: rgb(129,179,210);
+}
+.list-numbers {
+    background-color: rgb(238, 238, 238)
+}
+
+.visited-title {
+    font-size: 30px;
+}
+
+form .form-search {
+    background-color: rgb(118, 99, 87);
+}
+
+.footer {
+    background-color: rgba(249, 251, 246, 0.5);
+}
+
+.footer-tag{
+    font-size: 21px;
+}
+
+.social {
+    font-size: 0;
+}
+
+.social-button a.tw {
+    background-color: rgb(129, 179, 210);
+    background-image: url("http://i12.pixs.ru/storage/9/0/8/twpng_1712728_27310908.png");
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.social-button a.fc {    
+    background-color: rgb(129, 179, 210);
+    background-image: url("http://i12.pixs.ru/storage/9/0/3/fbpng_2188702_27310903.png");
+    background-position:  center;
+    background-repeat:  no-repeat;}
+.social-button a.yt {
+    background-color: rgb(129, 179, 210);
+    background-image: url("http://i12.pixs.ru/storage/9/1/5/ytpng_6612717_27310915.png");
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.social-button:hover,
+.social-button:focus {
+    border: 2px solid rgb(134, 165, 184);
+    background-color: rgb(90, 115, 130);
+}
+/* вторая страница*/
+.catalog .header-conteiner {
+    background-color: rgb(124 125 176);
+    background-image: url(img/filter%20background.jpg);
+}
+
+.visuale-hidde {
+    
+}
+
+.about-hotel h2,
+.money h2 {
+    font-size: 16px;
+}
+
+.choice-title {
+    font-size: 21px;
+     font-weight: bolder;
+}
+
+.choice-text,
+.choise-type {
+    font-size: 12px;
+}
+
+.hotel-yet{
+    background-color: rgb(129, 179, 210);
+}
+
+.hotel-button {
+    background-color: rgb(119, 99, 87);
+     text-transform: uppercase ;
+}
+
+.hotel-title {
+    font-size: 21px;
+    font-weight: bolder;
+}
+
