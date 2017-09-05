@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    width: 1200px;
+    margin: auto;
     padding: 0;
     font-size: 14px;
     font-family: "PT Sans", sans-serif;
@@ -17,10 +18,21 @@ a {
 
 nav {
     line-height: normal;
-    color: black;
     background-color:rgb(255, 255, 255);
-    background-image: url(img/Shape%201%20copy%203.jpg);
+    background-image: url("img/Shape%201%20copy%203.jpg");
     background-repeat: no-repeat;
+    background-size: top 570px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: color .1s ease;
+}
+
+.header-main {
+    background-color: rgb(255, 255, 255)
 }
 
 li {
@@ -29,7 +41,7 @@ li {
 
 .header-main a:hover,
 .header-main a:focus {
-    background-color: rgb(226, 239, 248);
+    color: rgb(145, 188, 219);
 }
 
 h2,
@@ -127,3 +139,47 @@ form .form-search {
     font-weight: bolder;
 }
 
+/*сетка*/
+.header-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-city {
+    display: flex;
+    flex-direction: row;
+    height: 256px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.about-city-conteiner {
+    padding: 45px 60px 60px 65px;
+    margin: 0;
+}
+
+.aboun-city-img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.list-bye {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 44px;
+}
+
+.item-bye-house,
+.item-bye-food,
+item-bye-gift {
+    padding: 
+}

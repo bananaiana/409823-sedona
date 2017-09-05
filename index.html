@@ -7,29 +7,31 @@
   </head>
   <body class="index">
   <!--  <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
-<!-- часть сайта, которая не меняется-->
-      <header class="header-conteiner">
-          <nav>
-          <img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" class="header-logo" alt="логотип города Седона" height="50" width="50">
+     <header class="header-conteiner">
+          <nav class="header-novigation">
               <ul class="header-main">
-                  <li><a href="info.html" tabindex>Информация</a> </li>
-                  <li><a href="galary.html" tabindex>Фото и видео</a></li>
-                  <li><a href="maps.html" tabindex>Карта штата</a></li>
-                  <li><a href="hotel.html" tabindex>Гостиницы</a></li>
+                  <li class="header-list"><a href="info.html" tabindex>Информация</a>
+                  </li>
+                  <li class="header-list"><a href="galary.html" tabindex>Фото и видео</a></li>
+                  <li class="header-logo"> <img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"  alt="логотип города Седона" height="70" width="130">
+                  </li>
+                  <li class="header-list"><a href="maps.html" tabindex>Карта штата</a>
+                  </li>
+                  <li class="header-list"><a href="hotel.html" tabindex>Гостиницы</a>
+                  </li>
               </ul>
         </nav>
-          <div>
-              <img src="img/Shape%201%20copy%203.jpg" alt="красивая картинка города Седона">
-          </div>
     </header>
       <main class="main-conteiner">
          <section class="conteiner">
           <h2 class="conteiner-big-text">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="conteiner-small-text">Рaссмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           <div class="about-city"> 
+              <div class="about-city-conteiner">
               <h3 class="about-city-title">Настоящий городок</h3>
               <p class="about-city-number">- №1 -</p>
               <p class="about-city-text">Седона- не атракцион для туристов, там течет своя жизнь</p>
+              </div>
               <figure class="aboun-city-img">
                   <img src="img/Layer%2010.jpg" alt="красивое смазанное фото города">
               </figure>
@@ -53,9 +55,11 @@
               </div>
           <div class="about-city">
               <img src="img/Layer%205.jpg" alt="красивое фото моста">
+              <div class="about-city-conteiner">
               <h3 class="about-city-title">Там есть мост дьявола</h3>
               <p class="about-city-number">- №2 -</p>
               <p class="about-city-text">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+              </div>
           </div>
           <div class="list-numbers">
                   <div class="item-three">
@@ -75,7 +79,7 @@
                   </div>
             </div>
         </section>
-          <section class="visited">
+        <!--<section class="visited">
               <h2 class="visually-hidden"> Обращение</h2>
               <figure>
                   <figcaption>
@@ -86,7 +90,7 @@
               </figure>
           </section>
           <!-- окно с датами-->
-          <form action="#" method="get" class="form" type="hidden">
+          <!--<form action="#" method="get" class="form" type="hidden">
               <input type="button" class="form-search" value="Поиск гостиницы в Седоне">
               <label>Дата заезда
                 <input type="date" name="date-there" tabindex>
@@ -125,6 +129,6 @@
                 <img src="img/logo_name.svg" alt="Логотип HTMLacademy">
             </a>
               </p>
-        </footer>
+        </footer>-->
   </body>
 </html>
