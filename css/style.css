@@ -19,9 +19,9 @@ a {
 nav {
     line-height: normal;
     background-color:rgb(255, 255, 255);
-    background-image: url("img/Shape%201%20copy%203.jpg");
+    background-image: url(../img/Shape%201%20copy%203.jpg);
     background-repeat: no-repeat;
-    background-size: top 570px;
+    
 }
 
 nav a{
