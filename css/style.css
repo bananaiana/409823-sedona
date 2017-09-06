@@ -16,12 +16,13 @@ a {
     text-decoration: none;
 }
 
-nav {
-    line-height: normal;
+header {
+    height: 590px;
     background-color:rgb(255, 255, 255);
     background-image: url(../img/Shape%201%20copy%203.jpg);
     background-repeat: no-repeat;
-    
+    background-size: cover;
+    background-position: top;
 }
 
 nav a{
@@ -58,9 +59,10 @@ h3 {
 
 .visited-title {
     font-size: 30px;
+    font-weight: bolder;
 }
 
-form .form-search {
+.form-search {
     background-color: rgb(118, 99, 87);
 }
 
@@ -76,34 +78,48 @@ form .form-search {
     font-size: 0;
 }
 
-.social-button a.tw {
+.tw {
     background-color: rgb(129, 179, 210);
-    background-image: url("http://i12.pixs.ru/storage/9/0/8/twpng_1712728_27310908.png");
-    background-position:  center;
+    background-image: url("../img/t.svg");
+    background-position: center;
     background-repeat:  no-repeat;
+    background-size: 50px 50px;
 }
 
-.social-button a.fc {    
+.fc {    
     background-color: rgb(129, 179, 210);
-    background-image: url("http://i12.pixs.ru/storage/9/0/3/fbpng_2188702_27310903.png");
-    background-position:  center;
-    background-repeat:  no-repeat;}
-.social-button a.yt {
-    background-color: rgb(129, 179, 210);
-    background-image: url("http://i12.pixs.ru/storage/9/1/5/ytpng_6612717_27310915.png");
+    background-image: url("../img/fb-icon.svg");
     background-position:  center;
     background-repeat:  no-repeat;
+    background-size: 50px 50px;
+}
+
+.yt {
+    background-color: rgb(129, 179, 210);
+    background-image: url("../img/youtube.svg");
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-size: 50px 50px;
 }
 
 .social-button:hover,
 .social-button:focus {
     border: 2px solid rgb(134, 165, 184);
     background-color: rgb(90, 115, 130);
+    background-size: 50px 50px;
 }
+.footer-copyright-button {
+    background-color: black;
+    background-image: url(../img/logo_namenew.svg);
+    background-size: 115px 40px;
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
 /* вторая страница*/
 .catalog .header-conteiner {
     background-color: rgb(124 125 176);
-    background-image: url(img/filter%20background.jpg);
+    background-image: url(../img/filter%20background.jpg);
 }
 
 .visuale-hidde {
@@ -143,8 +159,27 @@ form .form-search {
 .header-main {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+}
+
+.header-list {
+    padding-bottom: 23px;
+    padding-top: 23px;
+    align-self: flex-start;
+    flex-basis: 235px;
+}
+
+.list-two {
+    margin-right: 80px;
+}
+
+
+.header-logo {
+    position: absolute;
+    left: 600px;
+    right: 600px;
+    width: 138px;
+    margin:  auto;
 }
 
 .conteiner {
@@ -156,8 +191,8 @@ form .form-search {
     display: flex;
     flex-direction: row;
     height: 256px;
-    margin-bottom: 30px;
     margin-top: 30px;
+    justify-content: space-around;
 }
 
 .about-city-conteiner {
@@ -175,9 +210,58 @@ form .form-search {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    margin-bottom: 44px;
+    margin-bottom: 0px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .item-bye-house,
 .item-bye-food,
-.item-bye-gift 
+.item-bye-gift {
+    flex-basis: 320px;
+}
+
+.list-numbers {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item-three,
+.item-four,
+.item-five {
+    flex-basis: 320px;
+}
+
+.visited {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.visited-up {
+    align-self: center;
+    margin-left: 285px;
+    margin-right: 285px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 51px;
+    padding-top: 50px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10px;
+}

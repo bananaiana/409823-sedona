@@ -8,21 +8,21 @@
   <body class="index">
   <!--  <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
      <header class="header-conteiner">
-          <nav class="header-novigation">
+           <nav class="header-novigation">
+              <a href="index.html" class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"  alt="логотип города Седона" height="70" width="130"> 
+              </a>
               <ul class="header-main">
-                  <li class="header-list"><a href="info.html" tabindex>Информация</a>
+                  <li class="header-list list-one"><a href="info.html" tabindex>Информация</a>
                   </li>
-                  <li class="header-list"><a href="galary.html" tabindex>Фото и видео</a></li>
-                  <li class="header-logo"> <img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"  alt="логотип города Седона" height="70" width="130">
+                  <li class="header-list list-two"><a href="galary.html" tabindex>Фото и видео</a></li>
+                  <li class="header-list list-three"><a href="maps.html" tabindex>Карта штата</a>
                   </li>
-                  <li class="header-list"><a href="maps.html" tabindex>Карта штата</a>
-                  </li>
-                  <li class="header-list"><a href="hotel.html" tabindex>Гостиницы</a>
+                  <li class="header-list list-four"><a href="hotel.html" tabindex>Гостиницы</a>
                   </li>
               </ul>
         </nav>
     </header>
-      <main class="main-conteiner">
+     <main class="main-conteiner">
          <section class="conteiner">
           <h2 class="conteiner-big-text">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="conteiner-small-text">Рaссмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -79,20 +79,15 @@
                   </div>
             </div>
         </section>
-        <!--<section class="visited">
+        <section class="visited">
               <h2 class="visually-hidden"> Обращение</h2>
-              <figure>
-                  <figcaption>
+              <div class="visited-up">          
               <p class="visited-title"> Заинтересовались? </p>
-              <p class="visited-text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>>
-                  </figcaption>
-                  <img src="img/map.png" alt="Геоданные города Седона">
-              </figure>
-          </section>
-          <!-- окно с датами-->
-          <!--<form action="#" method="get" class="form" type="hidden">
-              <input type="button" class="form-search" value="Поиск гостиницы в Седоне">
-              <label>Дата заезда
+              <p class="visited-text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <input type="button" class="form-search" value="Поиск гостиницы в Седоне">
+            </div>
+             <!--<form action="#" method="get" class="form" type="hidden">
+             <label>Дата заезда
                 <input type="date" name="date-there" tabindex>
               </label>
               <label>Дата выезда
@@ -103,32 +98,31 @@
                   <input type="number" id="number" min="1" max="10" step="1" value="2" tabindex>
                   <input type="button" id="number" value="+" tabindex>
               </label>
-            </form>
+            </form>-->
+              <img src="img/map.png" alt="Геоданные города Седона">       
+         </section>
            </main>
           <footer class="footer">
               <p class="footer-tag">#visitsedona</p>
               <ul class="social">
                   <li class="social-button tw">
                       <a href="#" tabindex>twitter
-                      <img src="img/t.svg" alt="twitter">
                       </a>
                   </li>
                   <li class="social-button fc">
                       <a href="#" tabindex>facebook
-                      <img src="img/fb-icon.svg" alt="facebook">
                       </a>
                   </li>
                   <li class="social-button yt">
                       <a href="#" tabindex>youtube
-                      <img src="img/youtube.svg" alt="youtube">
                       </a>
                   </li>
               </ul>
-              <p class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru" tabindex>
-                <img src="img/logo_name.svg" alt="Логотип HTMLacademy">
+              <div class="footer-copyright">
+                <p class="footer-copyright-text">Website by</p>
+                <a class="button" class="footer-copyright-button" href="https://htmlacademy.ru" tabindex>
             </a>
-              </p>
-        </footer>-->
+              </div>
+        </footer>
   </body>
 </html>
