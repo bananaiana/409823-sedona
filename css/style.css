@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-header {
+.index header {
     height: 590px;
     background-color:rgb(255, 255, 255);
     background-image: url(../img/Shape%201%20copy%203.jpg);
@@ -30,6 +30,11 @@ nav a{
     font-weight: 700;
     color: #000;
     transition: color .1s ease;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
 }
 
 .header-main {
@@ -79,51 +84,81 @@ h3 {
 }
 
 .tw {
+    height: 50px;
+    width: 50px;
     background-color: rgb(129, 179, 210);
     background-image: url("../img/t.svg");
     background-position: center;
     background-repeat:  no-repeat;
-    background-size: 50px 50px;
+    background-size: 20px 20px;
+    margin-right: 10px;
 }
 
 .fc {    
+    height: 50px;
+    width: 50px;
     background-color: rgb(129, 179, 210);
     background-image: url("../img/fb-icon.svg");
     background-position:  center;
     background-repeat:  no-repeat;
-    background-size: 50px 50px;
+    background-size: 20px 20px;
+   
 }
 
 .yt {
+    height: 50px;
+    width: 50px;
     background-color: rgb(129, 179, 210);
     background-image: url("../img/youtube.svg");
     background-position:  center;
     background-repeat:  no-repeat;
-    background-size: 50px 50px;
+    background-size: 23px 17px;
+    margin-left: 10px;
 }
 
 .social-button:hover,
 .social-button:focus {
     border: 2px solid rgb(134, 165, 184);
     background-color: rgb(90, 115, 130);
-    background-size: 50px 50px;
+    background-size: 20px 20px;
 }
+
+.footer-copyright {
+    width: 241px;
+}
+
 .footer-copyright-button {
+    height: 40px;
     background-color: black;
-    background-image: url(../img/logo_namenew.svg);
-    background-size: 115px 40px;
-    background-position:  center;
-    background-repeat:  no-repeat;
+    background-image: url(../img/logoHTML.svg);
+    background-size: 110px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 /* вторая страница*/
 .catalog .header-conteiner {
+    height: 275px;
     background-color: rgb(124 125 176);
     background-image: url(../img/filter%20background.jpg);
+    background-size: 1200px 275px;
+    background-position: center;
 }
 
-.visuale-hidde {
-    
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.about-hotel {
+    color: rgb(255, 255, 255);
 }
 
 .about-hotel h2,
@@ -141,6 +176,52 @@ h3 {
     font-size: 12px;
 }
 
+.choise-type{
+    color: rgb(202, 202, 202);
+    border-bottom: 2px dotted rgb(129, 179, 210);
+}
+
+.choise-type:hover,
+.choise-type:focus {
+    color: rgb(129, 179, 210);
+    border-bottom: none;
+}
+
+.choise-type:nth-child(2) {
+    padding-left: 30px;
+}
+
+.choise-type:last-child {
+    padding-left: 30px;
+}
+
+.arrow-one {
+    width: 10px;
+    height: 10px;
+    background-color:  rgb(255, 255, 255);
+    background-image: url(../img/icon-up-dir.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+}
+
+.arrow-two {
+    width: 10px;
+    height: 10px;
+    background-color:  rgb(255, 255, 255);
+    background-image: url(../img/icon-down-dir-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+}
+
+.arrow-one:hover,
+.arrow-two:hover,
+.arrow-one:focus,
+.arrow-two:focus {
+    background-color: rgb(129, 179, 210);
+}
+
 .hotel-yet{
     background-color: rgb(129, 179, 210);
 }
@@ -154,6 +235,7 @@ h3 {
     font-size: 21px;
     font-weight: bolder;
 }
+
 
 /*сетка*/
 .header-main {
@@ -185,6 +267,13 @@ h3 {
 .conteiner {
     display: flex;
     flex-direction: column;
+}
+
+.conteiner-big-text,
+.conteiner-small-text {
+    align-self: center;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .about-city {
@@ -265,3 +354,68 @@ h3 {
     justify-content: space-around;
     margin-right: 10px;
 }
+
+
+/* вторая страница */
+
+.about-hotel {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.things,
+.type-hotel {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch; 
+}
+
+
+.things-list,
+.type-hotel-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.money {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-basis: 320px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.money-title {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.money-output {
+    margin-bottom: 10px;
+}
+
+.money-button {
+    margin-top: 20px;
+}
+
+.choise {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.arrows {
+    margin-left: 490px;
+}
+

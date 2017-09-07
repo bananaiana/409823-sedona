@@ -6,20 +6,23 @@
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog">
-      <header "header-conteiner">
-           <nav>
-          <img src="img/Layer%208.png" class="header-logo" alt="логотип города Седона" height="50" width="50">
+      <header class="header-conteiner">
+           <nav class="header-novigation">
+              <a href="index.html" class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"  alt="логотип города Седона" height="70" width="130"> 
+              </a>
               <ul class="header-main">
-                  <li><a href="info.html" tabindex>Информация</a> </li>
-                  <li><a href="galary.html" tabindex>Фото и видео</a></li>
-                  <li><a href="maps.html" tabindex>Карта штата</a></li>
-                  <li><a href="hotel.html" tabindex>Гостиницы</a></li>
+                  <li class="header-list list-one"><a href="info.html" tabindex>Информация</a>
+                  </li>
+                  <li class="header-list list-two"><a href="galary.html" tabindex>Фото и видео</a></li>
+                  <li class="header-list list-three"><a href="maps.html" tabindex>Карта штата</a>
+                  </li>
+                  <li class="header-list list-four"><a href="hotel.html" tabindex>Гостиницы</a>
+                  </li>
               </ul>
         </nav>
-          <h1 class="visuale-hidden">Поиск жилья</h1>
-          <form>
-          <img src="img/filter%20background.jpg" alt="Смазанная картинка красивого города Седона">
+          <h1 class="visually-hidden">Поиск жилья</h1>
           <div class="about-hotel">
+              <div class="things">
               <h2 class="things-title">Инфраструктура</h2>
               <ul class="things-list">
                   <li>
@@ -38,6 +41,8 @@
                     </label>
                 </li>
               </ul>
+              </div>
+            <div class="type-hotel">
           <h2 class="type-hotel-title">Тип жилья</h2>
            <ul class="type-hotel-list">
               <li>
@@ -59,15 +64,14 @@
               </div>
          <div class="money">
               <h2 class="money-title">Стоимость в сутки</h2>
-              <output name="money-min" for="money-range">от 0</output>
-              <output name="money-max" for="money-range">до 3000</output>
-              <input type="range" id="money-range" min="0" max="3000" step="1000" tabindex>
+              <output name="money-min" for="money-range" class="money-output">от 0 до 3000</output>
+              <input type="range" id="money-range" min="0" max="3000" step="1000" class="money-for-range" tabindex>
+              <input type="button" class="money-button" value="Показать" tabindex>  
+        </div>
           </div>
-          <input type="button" value="Показать" tabindex>
-          </form>
       </header>
-      <main>    
-      <h1 class="visuale-hidden">Найдено</h1>
+     <main>    
+      <h1 class="visually-hidden">Найдено</h1>
       <section class="choise">
           <h2 class="choice-title">Найдено:3
           </h2>
@@ -79,9 +83,13 @@
                 <a href="#" tabindex>по рейтингу</a>
               </li>
           </ul>
+          <div class="arrows">
+            <a href="#" class="visually-hidden arrow-one">Стрелка серая</a>
+            <a href="#" class="visually-hidden arrow-two">Стрелка белая</a>
+          </div>
       </section>
       <section class="hotel">
-          <h1 class="visuale-hidden">Отлели</h1>
+          <h1 class="visually-hidden">Отлели</h1>
           <div class="amara-resot">
               <figure class="hotel-figure">
                   <img src="img/Layer%2021.jpg" alt="Фото отеля Amara Resot">
@@ -136,30 +144,27 @@
       </section>
       
       </main>
-      <footer>
-          <p class="footer-tag">#visitsedona</p>
+      <footer class="footer">
+              <p class="footer-tag">#visitsedona</p>
               <ul class="social">
                   <li class="social-button tw">
                       <a href="#" tabindex>twitter
-                      <img src="img/t.svg" alt="twitter">
                       </a>
                   </li>
                   <li class="social-button fc">
                       <a href="#" tabindex>facebook
-                      <img src="img/fb-icon.svg" alt="facebook">
                       </a>
                   </li>
                   <li class="social-button yt">
                       <a href="#" tabindex>youtube
-                      <img src="img/youtube.svg" alt="youtube">
                       </a>
                   </li>
               </ul>
-              <p class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru" tabindex>
-                <img src="img/logo_name.svg" alt="Логотип HTMLacademy">
+              <div class="footer-copyright">
+                <p class="footer-copyright-text">Website by</p>
+                <a  class="footer-copyright-button" href="https://htmlacademy.ru" tabindex>
             </a>
-              </p>
-      </footer>
+              </div>
+        </footer>
   </body>
 </html>
