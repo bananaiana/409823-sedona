@@ -176,23 +176,22 @@ h3 {
     font-size: 12px;
 }
 
-.choise-type{
+.choise-type-maney,
+.choise-type-type,
+.choise-type-rating {
     color: rgb(202, 202, 202);
-    border-bottom: 2px dotted rgb(129, 179, 210);
+    border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
-.choise-type:hover,
-.choise-type:focus {
+
+.choise-type-maney:hover,
+.choise-type-maney:focus,
+.choise-type-type:hover,
+.choise-type-type:focus,
+.choise-type-rating:hover,
+.choise-type-rating:focus {
     color: rgb(129, 179, 210);
     border-bottom: none;
-}
-
-.choise-type:nth-child(2) {
-    padding-left: 30px;
-}
-
-.choise-type:last-child {
-    padding-left: 30px;
 }
 
 .arrow-one {
@@ -220,6 +219,13 @@ h3 {
 .arrow-one:focus,
 .arrow-two:focus {
     background-color: rgb(129, 179, 210);
+}
+
+.amara-resot,
+.deserrt-quail-inn,
+.villas-at-poco-diablo {
+    border: 1px solid rgb(202, 202, 202);
+    border-collapse: collapse;
 }
 
 .hotel-yet{
@@ -419,3 +425,15 @@ h3 {
     margin-left: 490px;
 }
 
+.choise-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 260px;
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
