@@ -128,12 +128,7 @@ h3 {
 }
 
 .footer-copyright-button {
-    height: 40px;
-    background-color: black;
-    background-image: url(../img/logoHTML.svg);
-    background-size: 110px 40px;
-    background-repeat: no-repeat;
-    background-position: center;
+   background-color: rgb(255, 255, 255);
 
 }
 
@@ -198,27 +193,38 @@ h3 {
     width: 10px;
     height: 10px;
     background-color:  rgb(255, 255, 255);
-    background-image: url(../img/icon-up-dir.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10px 10px;
 }
 
 .arrow-two {
     width: 10px;
     height: 10px;
     background-color:  rgb(255, 255, 255);
-    background-image: url(../img/icon-down-dir-down.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10px 10px;
 }
 
 .arrow-one:hover,
+.arrow-one:focus {
+    width: 10px;
+    height: 10px;
+    background-color:  rgb(255, 255, 255);
+    background-image: url(../img/icon-up-dir-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .arrow-two:hover,
-.arrow-one:focus,
 .arrow-two:focus {
-    background-color: rgb(129, 179, 210);
+    width: 10px;
+    height: 10px;
+    background-color:  rgb(255, 255, 255);
+    background-image: url(../img/icon-down-dir-down-blue);
+    background-repeat: no-repeat;
+}
+
+.rating {
+    width: 110px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    text-align: center;
 }
 
 .amara-resot,
@@ -232,7 +238,7 @@ h3 {
     background-color: rgb(129, 179, 210);
 }
 
-.hotel-button {
+.hotel-button-tab {
     background-color: rgb(119, 99, 87);
      text-transform: uppercase ;
 }
@@ -346,6 +352,8 @@ h3 {
 }
 
 .footer {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -359,6 +367,13 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     margin-right: 10px;
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around;
 }
 
 
@@ -411,7 +426,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-.money-button {
+.money-button-tab {
     margin-top: 20px;
 }
 
@@ -433,7 +448,46 @@ h3 {
 }
 
 .hotel {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.hotel-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6%;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.left {
+    display: flex;
+}
+
+.left figure {
+    margin-top: 30px;
+    margin-left: 30px; 
+}
+
+.hotel-info p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.info-left {
+    margin-right: 8px;
+}
+
+.hotel-info-box {
+    display: flex;
+}
+
+.hotel-rating-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
