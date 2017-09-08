@@ -263,13 +263,17 @@ h3 {
 
 
 /*сетка*/
-.header-main {
+/*.header-main {
+    margin: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .header-list {
+    margin: 0px;
     padding-bottom: 23px;
     padding-top: 23px;
     align-self: flex-start;
@@ -278,15 +282,47 @@ h3 {
 
 .list-two {
     margin-right: 80px;
+} */
+
+.header-novigation {
+    margin: 0px;
+    position: relative;
+    padding-left:  70px;
+    padding-right: 70px;
+    background-color: #fff;
+}
+
+.header-novigation ul {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header-novigation li {
+    width: 20%;
+    margin: 0px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.header-main .list-one,
+.header-main .list-two {
+    text-align: left;
+}
+
+.header-main .list-three,
+.header-main .list-four{
+    text-align: right;
 }
 
 
 .header-logo {
     position: absolute;
-    left: 600px;
-    right: 600px;
+    left: 0;
+    right: 0;
     width: 138px;
-    margin:  auto;
+    margin: 0 auto;
 }
 
 .conteiner {
@@ -397,7 +433,7 @@ h3 {
     padding: 0px 6%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .things,
@@ -487,7 +523,7 @@ h3 {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hotel-list {
@@ -496,12 +532,14 @@ h3 {
     padding: 30px 70px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
+    border-collapse: collapse;
 }
 
 .left {
     display: flex;
     padding: 0px;
     margin: 0px;
+    align-items: center;
 }
 
 .left figure {
@@ -510,13 +548,25 @@ h3 {
 
 .hotel-info p {
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.info-right,
+.info-left {
+    margin: 0px;
+}
+
+.hotel-info h2{
+    margin: 0px;
+    padding-bottom: 15px;
+    text-align: left;
 }
 
 .hotel-info{
     margin: 0px;
     padding-left: 30px;
-    align-self: center;
+    align-items: center;
 }
 
 .info-left {
@@ -532,4 +582,4 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-}
+} */
