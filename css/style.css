@@ -10,6 +10,7 @@ body {
     text-transform: uppercase ;
     background-color: rgb(255 255 255);
     background-position: center;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -68,7 +69,18 @@ h3 {
 }
 
 .form-search {
+    width: 570px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase ;
     background-color: rgb(118, 99, 87);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.form-search:hover,
+.form-search:focus {
+    border: 2px solid rgb(66, 55, 51);
 }
 
 .footer {
@@ -584,3 +596,114 @@ h3 {
     justify-content: space-between;
     align-items: flex-end;
 } 
+
+/*форма*/
+
+.index .form {
+    width: 470px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 30%;
+    left: 34.5%; 
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 50px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+} 
+
+.form-modal{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.form label
+
+.form input[type="date"]{
+    width: 340px;
+    padding: 15px 15px 15px 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    margin-bottom: 30px;
+    position:relative;
+}
+
+.form input[type="number"],
+.form input[type="button"] {
+    border: none;
+    background-color: rgb(242, 242, 242);
+}
+
+.form input[type="date"]:hover,
+.form input[type="date"]:focus,
+.form input[type="number"]:hover,
+.form input[type="number"]:focus,
+.form input[type="button"]:hover,
+.form input[type="button"]:focus {
+    border: 2px solid rgb(2, 3, 3)
+}
+
+
+.numder-for-people {
+    width: 230px;
+}
+
+input[type="button"].form-button-search {
+    width: 460px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 179, 210);
+}
+
+input[type="button"].form-button-search:focus,
+input[type="button"].form-button-search:hover {
+    border: 2px solid rgb(176, 206, 266);
+}
+
+.form-date  {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(242, 242, 242);
+    
+}
+
+.form input[type="date"]:after {
+    content: '';
+    position:absolute;
+    right: 10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/calendar-focus.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat; 
+}
+
+.form input[type="date"]:hover:after {
+    display: none;
+}
+
+.form input[type="date"]::-webkit-outer-spin-button,
+.form input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.form input[type="date"] {
+    -moz-appearance: textfield;
+}
+
+.number-peoples {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-peoples label {
+    margin: 0px;
+    padding: 0px;
+}

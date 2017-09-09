@@ -18,7 +18,7 @@
                   <li class="header-list list-two"><a href="galary.html">Фото и видео</a></li>
                   <li class="header-list list-three"><a href="maps.html">Карта штата</a>
                   </li>
-                  <li class="header-list list-four"><a href="hotel.html">Гостиницы</a>
+                  <li class="header-list list-four"><a href="catalog.html">Гостиницы</a>
                   </li>
               </ul>
         </nav>
@@ -86,18 +86,26 @@
               <p class="visited-text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <input type="button" class="form-search" value="Поиск гостиницы в Седоне">
             </div>
-             <form action="#" method="get" class="form" type="hidden">
-             <label>Дата заезда
-                <input type="date" name="date-there" tabindex>
+             <form action="#" method="get" class="form form-modal" type="hidden">
+                 <label><span class="number-for-indent">Дата заезда:</span>
+                <input type="date" name="date-there" class="form-date" placeholder="24 апреля 2017г." tabindex>
               </label>
-              <label>Дата выезда
-                  <input type="date" name="date-back" tabindex>
+                 <label><span class="number-for-indent">Дата выезда:</span>
+                  <input type="date" name="date-back" class="form-date" placeholder="4 июля 2017г."  tabindex>
               </label>
-              <label id="number">Взрослые
-                  <input type="button" id="number" value="-" tabindex>
-                  <input type="number" id="number" min="1" max="10" step="1" value="2" tabindex>
-                  <input type="button" id="number" value="+" tabindex>
+                 <span class="number-peoples">
+                     <label id="number" class="number-for-people">Взрослые:
+                  <input type="button" id="number" value="-" class="form-minus" tabindex>
+                  <input type="number" id="number" min="1" max="10" step="1" value="2" class="form-number" tabindex>
+                  <input type="button" id="number" value="+" class="form-plus" tabindex>
               </label>
+                     <label id="number" class="numder-for-people">Дети:
+                  <input type="button" id="number" value="-" class="form-minus" tabindex>
+                  <input type="number" id="number" min="1" max="10" step="1" class="form-number" value="0" tabindex>
+                  <input type="button" id="number" value="+" class="form-plus" tabindex>
+              </label>
+                 </span>
+            <input type="button" class="form-button-search" value="Найти">
             </form>
               <img src="img/map.png" alt="Геоданные города Седона">       
          </section>
