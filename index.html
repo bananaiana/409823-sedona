@@ -86,24 +86,22 @@
               <p class="visited-text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <input type="button" class="form-search" value="Поиск гостиницы в Седоне">
             </div>
-             <form action="#" method="get" class="form form-modal" type="hidden">
-                 <label><span class="number-for-indent">Дата заезда:</span>
-                <input type="date" name="date-there" class="form-date" placeholder="24 апреля 2017г." tabindex>
+             <form action="#" method="get" class="form form-modal">
+                 <label><span class="date-title">Дата заезда:</span>
+                <input type="date" name="date-there" class="form-date">
               </label>
-                 <label><span class="number-for-indent">Дата выезда:</span>
-                  <input type="date" name="date-back" class="form-date" placeholder="4 июля 2017г."  tabindex>
+                 <label><span class="date-title">Дата выезда:</span>
+                  <input type="date" name="date-back" class="form-date">
               </label>
                  <span class="number-peoples">
-                     <label id="number" class="number-for-people">Взрослые:
-                  <input type="button" id="number" value="-" class="form-minus" tabindex>
-                  <input type="number" id="number" min="1" max="10" step="1" value="2" class="form-number" tabindex>
-                  <input type="button" id="number" value="+" class="form-plus" tabindex>
-              </label>
-                     <label id="number" class="numder-for-people">Дети:
-                  <input type="button" id="number" value="-" class="form-minus" tabindex>
-                  <input type="number" id="number" min="1" max="10" step="1" class="form-number" value="0" tabindex>
-                  <input type="button" id="number" value="+" class="form-plus" tabindex>
-              </label>
+                     <span class="number-grow">
+                     <label class="number-for-grown"> Взрослые: </label>
+                  <input type="button"  value="-" class="form-minus"><input type="number"  min="1" max="10" step="1" value="2" class="form-number"><input type="button"  value="+" class="form-plus">
+                     </span>
+                     <span class="number-child">
+                     <label class="numder-for-child">Дети: </label>
+                  <input type="button" value="-" class="form-minus"><input type="number" min="1" max="10" step="1" class="form-number" value="0"><input type="button" value="+" class="form-plus">
+                     </span>
                  </span>
             <input type="button" class="form-button-search" value="Найти">
             </form>
@@ -118,7 +116,7 @@
                       </a>
                   </li>
                   <li class="social-button fc">
-                      <a href="#" >facebook
+                      <a href="#">facebook
                       </a>
                   </li>
                   <li class="social-button yt">
@@ -128,7 +126,7 @@
               </ul>
               <div class="footer-copyright">
                 <p class="footer-copyright-text">Website by</p>
-                  <a  class="footer-copyright-button" href="https://htmlacademy.ru"><img src="img/logoHTML.svg" alt="Логотип HTML academy" width="110" height="40">
+                  <a  class="footer-copyright-button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoHTML.svg" alt="Логотип HTML academy" width="110" height="40">
                   </a>
               </div>
         </footer>

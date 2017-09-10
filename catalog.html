@@ -6,7 +6,7 @@
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog">
-     <header class="header-conteiner">
+    <header class="header-conteiner">
            <nav class="header-novigation">
               <a href="index.html" class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"  alt="логотип города Седона" height="70" width="130"> 
               </a>
@@ -26,53 +26,76 @@
               <h2 class="things-title">Инфраструктура:</h2>
               <ul class="things-list">
                   <li>
-                      <ladel > Басейн
-                      <input type="checkbox" checked>
+                      <ladel class="checkbox-label">
+                          <span class="checkbox-indicator">
+                          </span>
+                      <input type="checkbox" disabled> 
+                        Басейн
                       </ladel>
                  </li>
                 <li>
-                    <label> Парковка
-                        <input type="checkbox">
+                    <label class="checkbox-label">
+                         <span class="checkbox-indicator"></span>
+                        <input type="checkbox" disabled>
+                        Парковка
                     </label>
                 </li>
                 <li>
-                    <label> Wi-fi
-                        <input type="checkbox">
+                    <label class="checkbox-label"> 
+                        <span class="checkbox-indicator"></span>
+                        <input type="checkbox" disabled>
+                        Wi-fi
                     </label>
                 </li>
               </ul>
               </div>
-            <div class="type-hotel">
+           <div class="type-hotel">
           <h2 class="type-hotel-title">Тип жилья:</h2>
            <ul class="type-hotel-list">
               <li>
-              <label>Гостиница
-                  <input type="checkbox" checked>
-            </label>
+              <label class="checkbox-label">
+                  <span class="checkbox-indicator"></span>
+                  <input type="checkbox" disabled>
+                  Гостиница
+            </label >
               </li>
               <li>
-                  <label>Мотель
-                      <input type="checkbox" checked>
+                  <label class="checkbox-label">
+                      <span class="checkbox-indicator"></span>
+                      <input type="checkbox" disabled>
+                      Мотель
                   </label>
               </li>
               <li>
-                  <label>Апартамента
-                      <input type="checkbox" checked>
+                  <label class="checkbox-label">
+                      <span class="checkbox-indicator"></span>
+                      <input type="checkbox" disabled>
+                      Апартамента
                   </label>
               </li>
           </ul>
               </div>
          <div class="money">
               <h2 class="money-title">Стоимость в сутки</h2>
-              <output name="money-min" for="money-range" class="money-output">от 0 до 3000</output>
-              <input type="range" id="money-range" min="0" max="3000" step="1000" class="money-for-range">
-              <input type="button" class="money-button-tab" value="Показать">  
+             <div class="money-control">
+             <label class="money-min">от <input type="text" name="min-price" value="0"></label>
+        <label class="money-max">до <input type="text" name="max-price" value="3000"></label>
+             </div>
+             <div class="range">
+                 <div class="range-scale">
+                     <div class="range-bar"></div>
+                 </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+                 </div>
+                <button class="money-button-tab" type="submit">Показать</button>  
         </div>
-          </div>
+         </div>
       </header>
-     <main>    
+     <main> 
       <h1 class="visually-hidden">Найдено</h1>
       <section class="choise">
+          <div class="choise-left">
           <h2 class="choice-title">Найдено:3
           </h2>
           <p class="choice-text">сортировка:</p>
@@ -80,6 +103,7 @@
                 <a href="#" class="choise-type-maney">по цене</a>
                 <a href="#" class="choise-type-type">по типу</a>
                 <a href="#" class="choise-type-rating">по рейтингу</a>
+          </div>
           </div>
           <div class="arrows">
             <a href="#" class="arrow-one"></a>
@@ -102,7 +126,7 @@
                 </div>
                 <div class="info-right">
                     <p class="hotel-money">от 4000 р.</p>
-                    <input type="button" class="hotel-button-tab" value="Забронировать">
+                    <a href="#" class="hotel-button-tab">Забронировать</a>
                  </div>
                 </div>
                 </div>
@@ -131,7 +155,7 @@
                 </div>
                 <div class="info-right">
                     <p class="hotel-money">от 3000 р.</p>
-                    <input type="button" class="hotel-button-tab" value="Забронировать">
+                    <a href="#" class="hotel-button-tab">Забронировать</a>
                  </div>
                 </div>
                 </div>
@@ -159,7 +183,7 @@
                 </div>
                 <div class="info-right">
                     <p class="hotel-money">от 2000 р.</p>
-                    <input type="button" class="hotel-button-tab" value="Забронировать">
+                    <a href="#" class="hotel-button-tab">Забронировать</a>
                  </div>
                 </div>
                 </div>
@@ -193,7 +217,7 @@
               </ul>
               <div class="footer-copyright">
                 <p class="footer-copyright-text">Website by</p>
-                <a  class="footer-copyright-button" href="https://htmlacademy.ru"><img src="img/logoHTML.svg" alt="Логотип HTML academy" width="110" height="40">
+                <a  class="footer-copyright-button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoHTML.svg" alt="Логотип HTML academy" width="110" height="40">
             </a>
               </div>
         </footer>
