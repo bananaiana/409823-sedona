@@ -10,7 +10,13 @@ body {
     text-transform: uppercase;
     background-color: rgb(255 255 255);
     background-position: center;
-    box-shadow: 0 0 20px 5px rgba(0,0,0,.2)
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+}
+
+button, input[type="button"] {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 a,nav a {
@@ -75,12 +81,10 @@ h2,h3 {
     text-transform: uppercase;
     background-color: #766357;
     padding-bottom: 30px;
-    padding-top: 30px
-}
-
-.form-search:focus,
-.form-search:hover {
-    border: 2px solid #423733
+    padding-top: 30px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .footer {
@@ -88,16 +92,18 @@ h2,h3 {
 }
 
 .footer-tag {
-    font-size: 21px
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .social {
     font-size: 0
 }
 
-.fc,
-.tw,
-.yt {
+.fc a,
+.tw a,
+.yt a {
+    display: block;
     height: 50px;
     width: 50px;
     background-color: #81b3d2;
@@ -106,26 +112,19 @@ h2,h3 {
     background-size: 20px 20px
 }
 
-.tw {
+.tw a {
     margin-right: 10px;
     background-image: url(../img/t.svg)
 }
 
-.fc,.yt {
+.fc a {
     background-image: url(../img/fb-icon.svg)
 }
 
-.yt {
+.yt a {
     background-image: url(../img/youtube.svg);
     background-size: 23px 17px;
     margin-left: 10px
-}
-
-.social-button:focus,
-.social-button:hover {
-    border: 2px solid #86a5b8;
-    background-color: #5a7382;
-    background-size: 20px 20px
 }
 
 .footer-copyright {
@@ -357,31 +356,28 @@ h2,h3 {
     background: #fff
 }
 
-.things-list li,.type-hotel-list li {
+.things-list li, .type-hotel-list li {
     position: relative;
-    padding-left: 40px
 }
 
-input[type=checkbox] {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 23px;
-    height: 23px;
-    background-image: url(../img/checkbox-off.svg);
-    background-size: 23px 23px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer
+.checkbox-label {
+    position: relative;
+    cursor: pointer;
 }
 
-input[type=checkbox]:checked {
-    background-image: url(../img/checkbox-on.svg);
-    background-size: 23px 23px;
-    background-repeat: no-repeat;
-    background-position: center
+.checkbox-label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background: url(../img/checkbox-on.svg) no-repeat;
 }
 
+.checkbox-label input[type=checkbox] {
+    display: none;
+}
 
 /*сетка*/
 
@@ -491,6 +487,11 @@ input[type=checkbox]:checked {
     align-self: center;
     margin-left: 285px;
     margin-right: 285px;
+}
+
+.visited-bottom {
+    padding-bottom: 80px;
+    background: url("../img/map.jpg");
 }
 
 .footer {
@@ -709,10 +710,8 @@ input[type=checkbox]:checked {
 /*форма*/
 .index .form {
     width: 470px;
-    position: fixed;
+    margin: 0 auto;
     background-color: #fff;
-    top: 30%;
-    left: 34.5%;
     font-size: 14px;
     font-weight: bolder;
     padding: 50px;
@@ -748,7 +747,7 @@ input[type=checkbox]:checked {
     background-color: #f2f2f2
 }
 
-.form button:focus,.form button:hover,
+/*.form button:focus,.form button:hover,
 .form input[type=button]:focus,
 .form input[type=button]:hover,
 .form input[type=date]:focus,
@@ -756,7 +755,7 @@ input[type=checkbox]:checked {
 .form input[type=number]:focus,
 .form input[type=number]:hover {
     border: 2px solid #020303
-}
+}*/
 
 input[type=button].form-button-search {
     width: 460px;
@@ -768,10 +767,10 @@ input[type=button].form-button-search {
     background-color: #81b3d2
 }
 
-input[type=button].form-button-search:focus,
+/*input[type=button].form-button-search:focus,
 input[type=button].form-button-search:hover {
     border: 2px solid #b0ceff
-}
+}*/
 
 .form-date {
     width: 20px;
@@ -807,8 +806,13 @@ input[type=button].form-button-search:hover {
     -moz-appearance: textfield
 }
 
-.number-for-grown,.numder-for-child {
-    margin-right: 15px
+.number-for-grown, .numder-for-child {
+    display: block;
+    width: 50%;
+}
+
+.numder-for-child {
+    margin-right: 38px;
 }
 
 .number-peoples input[type=button],
@@ -834,10 +838,17 @@ input[type=button].form-button-search:hover {
     display: inline-block
 }
 
+.number-grow,
+.number-child {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
 .number-grow {
-    left: 0
+    text-align: left;
 }
 
 .number-child {
-    right: 0
+    text-align: right;
 }
