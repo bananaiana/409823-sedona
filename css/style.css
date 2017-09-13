@@ -20,7 +20,7 @@ button, input[type="button"] {
 }
 
 a,nav a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .index header {
@@ -37,7 +37,6 @@ nav a {
     color: #000;
     transition: color .1s ease;
 }
-
 
 nav ul {
     padding: 0;
@@ -408,9 +407,13 @@ h2,h3 {
     top: 50%;
     left: 50%;
     width: 2px;
-    height: 22px;
     transform: translate(-50%,-50%);
     background: #fff;
+}
+
+.money input[type="text"] {
+    line-height: 0px;
+    padding: 0px;
 }
 
 .money-control label {
@@ -953,7 +956,7 @@ h2,h3 {
 }
 
 .form input[type=date]:after {
-    content: '';
+    content: "";
     position: absolute;
     right: 10px;
     top: 5px;
