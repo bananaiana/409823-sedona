@@ -27,44 +27,40 @@
             </ul>
         </nav>
         <h1 class="visually-hidden">Поиск жилья</h1>
-        <div class="about-hotel">
+        <form class="about-hotel">
             <div class="things">
                 <h2 class="things-title">Инфраструктура:</h2>
-                <form>
-                    <ul class="things-list">
-                        <li>
-                            <input id="pool" type="checkbox"> 
-                            <label for="pool" class="checkbox-label">Басейн</label>
-                        </li>
-                        <li>
-                            <input id="parking"  type="checkbox">
-                            <label for="parking" class="checkbox-label">Парковка</label>
-                        </li>
-                        <li>
-                            <input id="wi-fi" type="checkbox">
-                            <label for="wi-fi" class="checkbox-label"> Wi-fi</label>
-                        </li>
-                    </ul>
-                </form>
+                <ul class="things-list">
+                    <li>
+                        <input id="pool" type="checkbox"> 
+                        <label for="pool" class="checkbox-label">Басейн</label>
+                    </li>
+                    <li>
+                        <input id="parking"  type="checkbox">
+                        <label for="parking" class="checkbox-label">Парковка</label>
+                    </li>
+                    <li>
+                        <input id="wi-fi" type="checkbox">
+                        <label for="wi-fi" class="checkbox-label"> Wi-fi</label>
+                    </li>
+                </ul>
             </div>
             <div class="type-hotel">
                 <h2 class="type-hotel-title">Тип жилья:</h2>
-                <form>
-                    <ul class="type-hotel-list">
-                        <li>
-                            <input type="checkbox">
-                            <label class="checkbox-label">Гостиница</label >
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label class="checkbox-label">Мотель</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label class="checkbox-label">Апартамента</label>
-                        </li>
-                    </ul>
-                </form>
+                <ul class="type-hotel-list">
+                    <li>
+                        <input type="checkbox">
+                        <label class="checkbox-label">Гостиница</label >
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label class="checkbox-label">Мотель</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label class="checkbox-label">Апартамента</label>
+                    </li>
+                </ul>
             </div>
             <div class="money">
                 <h2 class="money-title">Стоимость в сутки</h2>
@@ -83,9 +79,9 @@
                     <div class="range-toggle range-toggle-min"></div>
                     <div class="range-toggle range-toggle-max"></div>
                 </div>
-                <button class="money-button-tab" type="submit">Показать</button>  
-            </div>
-        </div>
+                <button class="money-button-tab" type="submit">Показать</button> 
+           </div>
+        </form>
     </header>
     <main> 
         <h1 class="visually-hidden">Найдено</h1>
@@ -100,12 +96,13 @@
                 </div>
             </div>
             <div class="arrows">
+                <h3 class="visually-hidden">Стрелки вверх и вниз</h3>
                 <a href="#" class="arrow-one"></a>
                 <a href="#" class="arrow-two"></a>
             </div>
         </section>
         <section class="hotel">
-            <h1 class="visually-hidden">Отели</h1>
+            <h2 class="visually-hidden">Отели</h2>
             <div class="hotel-list">
                 <div class="left">
                     <figure>
@@ -127,8 +124,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel-rating-right">
+                <div class="hotel-rating-right"> 
                     <div class="hotel-stars">
+                        <h3 class="visually-hidden">Звезды отля</h3>
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
@@ -151,7 +149,7 @@
                                 <p class="hotel-text">Мотель</p>
                                 <a href="#" class="hotel-yet">Подробнее</a>
                             </div>
-                            <div class="info-right">
+                            <div class="info-right hotel-box">
                                 <p class="hotel-money">от 3000 р.</p>
                                 <a href="#" class="hotel-button-tab">Забронировать</a>
                             </div>
@@ -160,6 +158,7 @@
                 </div>
                 <div class="hotel-rating-right">
                     <div class="hotel-stars">
+                        <h3 class="visually-hidden">Звезды отля</h3>
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
@@ -190,6 +189,7 @@
                 </div>
                 <div class="hotel-rating-right">
                     <div class="hotel-stars">
+                        <h3 class="visually-hidden">Звезды отля</h3>
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
                         <img src="img/starwars.svg" alt="звездный рейтинг" width="20" height="20">
                     </div>
