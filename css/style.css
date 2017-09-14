@@ -402,13 +402,14 @@ h2,h3 {
 }
 
 .money-control::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2px;
-    transform: translate(-50%,-50%);
-    background: #fff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
 }
 
 .money input[type="text"] {
@@ -424,10 +425,14 @@ h2,h3 {
     cursor: pointer;
 }
 
-.money-control .money-max,
 .money-control .money-min {
     width: 90px;
-    padding-left: 65px;
+    padding-left: 30px;
+}
+
+.money-control .money-max {
+     width: 90px;
+    padding-left: 40px;
 }
 
 .money-control input {
@@ -517,7 +522,7 @@ h2,h3 {
     background: url(../img/checkbox-on.svg) no-repeat;
 }
 
-.checkbox-label input[type=checkbox] {
+input[type=checkbox] {
     display: none;
 }
 
